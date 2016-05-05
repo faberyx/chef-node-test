@@ -17,7 +17,7 @@ NODEJS
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['fdm-local']['bacon']</tt></td>
+    <td><tt>['node-test']['default']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -28,7 +28,7 @@ NODEJS
 
 ### node-test::default
 
-Include `fdm-local` in your node's `run_list`:
+Include `node-test` in your node's `run_list`:
 
 ```json
 {
