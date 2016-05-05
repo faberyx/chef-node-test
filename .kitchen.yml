@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+  require_chef_omnibus: true
+  chef_omnibus_url: https://www.chef.io/chef/install.sh
+
+platforms:
+  - name: centos/7
+    driver:
+      box: centos/7
+
+suites:
+  - name: default
+    run_list: 
+      - recipe[node-test::default]
+    attributes:
+    driver:
+      synced_folders: 
+        - ['d:\shared', '/home/vagrant/sync']
+      network:
+        - ['private_network', {type: 'dhcp'}]
+        - ['forwarded_port',  {guest: 8080, host: 80}]
