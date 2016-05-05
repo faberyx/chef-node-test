@@ -1,10 +1,11 @@
-# fdm-local-cookbook
+# node-test-cookbook
 
-TODO: Enter the cookbook description here.
+  Chef cookbook for nodejs server with nginx reverse proxy 
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+NGINX
+NODEJS
 
 ## Attributes
 
@@ -25,18 +26,18 @@ TODO: List your supported platforms.
 
 ## Usage
 
-### fdm-local::default
+### node-test::default
 
 Include `fdm-local` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[fdm-local::default]"
+    "recipe[node-test::default]"
   ]
 }
 ```
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Fabrizio Catitti
